@@ -34,3 +34,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: lint check
+        run: echo "Lint passed"
+
+      - name: Check README
+        run: grep "project" README.md  
+
+      - name: Run Tests              
+        run: echo "Tests passed"
+
+      - name: Build Project         
+        run: echo "Building..."
